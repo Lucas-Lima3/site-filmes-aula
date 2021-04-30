@@ -1,0 +1,431 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+    color: #444444;
+}
+  
+a {
+    color: #47b2e4;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #73c5eb;
+    text-decoration: none;  
+}
+  
+h1 {
+    font-family: "Valorant", "Arial Rounded MT Bold", Arial, sans-serif;
+}
+  
+h2, h3, h4, h5, h6 {
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+}
+
+#hero {
+    background-image: url("../images/2x-fundo-principal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#hero .container {
+    padding-top: 72px;
+}
+  
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 58px;
+    font-weight: 300;
+    line-height: 70px;
+    color: #fff;
+}
+  
+#hero h2 {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+  
+#hero .btn-get-started {
+    font-family: "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 11px 28px 11px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px 0 0 0;
+    color: #fff;
+    background: #47b2e4;
+}
+  
+#hero .btn-get-started:hover {
+    background: #209dd8;
+}
+
+
+#hero .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+  
+#hero .hero-img img {
+    height: 70vh;
+    margin-left: 60px;
+}
+  
+@media (max-width: 991px) {
+    #hero {
+      height: 100vh;
+      text-align: center;
+    }
+    #hero .animated {
+      -webkit-animation: none;
+      animation: none;
+    }
+    #hero .hero-img {
+      text-align: center;
+    }
+    #hero .hero-img img {
+      width: 40%;
+    }
+}
+  
+@media (max-width: 768px) {
+    #hero h1 {
+      font-size: 18px;
+      line-height: 36px;
+    }
+    #hero h2 {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+    #hero .hero-img img {
+      width: 60%;
+    }
+}
+  
+@media (max-width: 575px) {
+    #hero .hero-img img {
+      width: 60%;
+    }
+    #hero .btn-get-started {
+      font-size: 16px;
+      padding: 10px 24px 11px 24px;
+    }
+    #hero .btn-watch-video {
+      font-size: 16px;
+      padding: 10px 0 8px 40px;
+      margin-left: 20px;
+    }
+    #hero .btn-watch-video i {
+      font-size: 32px;
+      top: 7px;
+    }
+}
+  
+@-webkit-keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+}
+  
+@keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+}
+
+
+.botaograndre {
+    font-size: 26px;
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+  
+.section-bg {
+    background-color: #f3f5fa;
+}
+
+#cadastro_usuario .section-title h2{
+	font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #fff;
+}
+
+#cadastro_usuario .section-title p {
+	font-size: 18px;
+	color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+  
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #37517e;
+}
+  
+.section-title h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #193d53;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+  
+.section-title p {
+    margin-bottom: 0;
+}
+
+
+section#filmes {
+	height: 100vh;
+	display: flex;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+#filmes h1 {
+	margin-left: 7%;
+	margin-top: 11%;
+	font: normal normal bold 40px/41px Segoe UI;
+	letter-spacing: 0px;
+	color: #646464;
+}
+
+div#lista_filmes {
+	height: 100%;
+	display: flex;
+	margin-left: 7%;
+	margin-right: 7%;
+	justify-content: space-around;
+}
+
+.star_wars {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.imagens_filmes {
+	width: 20vh;
+	height: 30vh;
+}
+
+.imagens_filmes:hover {
+	width: 25vh;
+	height: 35vh;
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
+.imagens_filmes:not(hover) {
+	width: 20vh;
+	height: 30vh;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.nomes_filmes {
+	font: normal normal bold 18px/19px Segoe UI;
+	margin-top: 1vh;
+	letter-spacing: 0px;
+	color: #646464;
+	text-align: center;
+	margin-bottom: 1vh;
+}
+
+.botoes_filmes {
+	text-align: center;
+	margin-top: 0;
+	background: #FF5B41 0% 0% no-repeat padding-box;
+	padding: 1vh 5vh 1vh 5vh;
+	border-radius: 15px;
+	font: normal normal bold 18px/19px Segoe UI;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.botoes_filmes:hover {
+	font: normal normal bold 22px/23px Segoe UI;
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
+.botoes_filmes:not(hover) {
+	font: normal normal bold 18px/19px Segoe UI;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+#cadastro_usuario {
+	height: 100vh;
+	background: #232323 0% 0% no-repeat padding-box;
+	display: flex;
+	justify-content: space-around;
+}
+
+#texto {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10vh;
+
+}
+
+#texto h1 {
+	font: normal normal bold 51px/52px Segoe UI;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	margin-bottom: 1vh;
+}
+
+#texto h2 {
+	font: normal normal normal 25px/52px Segoe UI;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+}
+
+#formulario {
+	display: flex;
+	flex-direction: column;
+	width: 50vh;
+	margin-top: 21vh;
+}
+
+#formulario label {
+	font: normal normal bold 20px/21px Segoe UI;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	padding: 2vh 0vh 1vh 0vh;
+}
+
+#formulario input {
+	height: 4vh;
+}
+
+#formulario input:hover {
+	opacity: 0.5;
+	transition: 1s;
+}
+
+#formulario input:focus {
+	opacity: 0.5;
+}
+
+#formulario textarea {
+	height: 10vh;
+}
+
+#formulario textarea:hover {
+	opacity: 0.5;
+	transition: 1s;
+}
+
+#formulario textarea:focus {
+	opacity: 0.5;
+}
+
+#formulario a {
+	padding: 1vh 0vh 1vh 0vh;
+	background-color: #FF5B41;
+	border: 1px solid #FF5B41;
+	font: normal normal bold 20px/21px Segoe UI;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-top: 3vh;
+	text-align: center;
+}
+
+#formulario a:hover {
+	font: normal normal bold 23px/24px Segoe UI;
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
+#formulario a:not(hover) {
+	font: normal normal bold 20px/21px Segoe UI;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+footer {
+	height: 40vh;
+	background-color: black;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer h2 {
+	font: normal normal bold 20px/21px Segoe UI;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+}
+
+footer #redes_sociais {
+	display: flex;
+	justify-content: space-around;
+	height: 5vh;
+}
+
+footer #redes_sociais img {
+	width: 10vh;
+	height: 6vh;
+}
+
+footer #redes_sociais img:hover {
+	opacity: 0.5;
+	cursor: pointer;
+	height: 10vh;
+	transition: 0.5s;
+}
+
+footer #redes_sociais img:not(hover) {
+	opacity: 1;
+	cursor: pointer;
+	height: 6vh;
+	transition: 0.5s;
+}
+
+  
+  
